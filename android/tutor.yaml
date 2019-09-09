@@ -1,0 +1,6 @@
+API_HOST_URL: 'http://learn.rput.org'
+ENVIRONMENT_DISPLAY_NAME: 'tutor'
+PLATFORM_NAME: 'Resurrection Power University of Theology and Technology'
+PLATFORM_DESTINATION_NAME: 'learn.rput.org'
+FEEDBACK_EMAIL_ADDRESS: 'support@learn.rput.org'
+OAUTH_CLIENT_ID: 'android'

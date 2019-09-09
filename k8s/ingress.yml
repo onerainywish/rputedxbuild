@@ -1,0 +1,33 @@
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: web
+  labels:
+    app.kubernetes.io/name: web
+  annotations:
+    nginx.ingress.kubernetes.io/proxy-body-size: 1000m
+    
+spec:
+  rules:
+  
+  - host: learn.rput.org
+    http:
+      paths:
+      - backend:
+          serviceName: nginx
+          servicePort: 80
+  - host: preview.learn.rput.org
+    http:
+      paths:
+      - backend:
+          serviceName: nginx
+          servicePort: 80
+  - host: studio.rput.org
+    http:
+      paths:
+      - backend:
+          serviceName: nginx
+          servicePort: 80
+  
+  
